@@ -1,0 +1,20 @@
+A,Airport,80ffffff
+C1,Business Office Commercial,80802bff
+C2,Highway Commercial,800064c3
+C3,Shopping Centre Commercial,800055ff
+CDA,Comprehensive Development Area,80ddc2bf
+DMU,Downtown Mixed-Use,80b1c0e0
+I,Institutional,80ffb272
+M1,Light Industrial,80cccccc
+M2,Heavy Industrial,80686868
+M3,Business Park Industial,80b087c8
+MH,Manufactured Housing,80e6e6e6
+MUC,Mixed Use Corridor,8001aaff
+OS,Open Space,8001e64c
+P,Parking,80ffd2be
+R1L,Single Detached Residential (Large),8072fbff
+R1S,Single Detached Residential (Small),808afbd5
+R2,Low Density Residential,805bc4ed
+R2S,Low Density Residential (Small),80d4ecfa
+R3,Medium Density Residential,8000a8a9
+R4,Apartment Residential,80006fa8
