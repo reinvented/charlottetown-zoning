@@ -29,10 +29,10 @@
   * @license http://www.fsf.org/licensing/licenses/gpl.txt GNU Public License
   */
   
-//downloadCivicAddressData();
-//makeCivicAddressDatabase();
-//makeZoningDatabase();
-//makeLookupDatabase();
+downloadCivicAddressData();
+makeCivicAddressDatabase();
+makeZoningDatabase();
+makeLookupDatabase();
 dumpJSON();
 
 /**

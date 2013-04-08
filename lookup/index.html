@@ -8,27 +8,27 @@
 <script>
 
 var zones = {
-							"A":{"fullname":"Airport","colour":"80ffffff"},
-							"C1":{"fullname":"Business Office Commercial","colour":"80802bff"},
-							"C2":{"fullname":"Highway Commercial","colour":"800064c3"},
-							"C3":{"fullname":"Shopping Centre Commercial","colour":"800055ff"},
-							"CDA":{"fullname":"Comprehensive Development Area","colour":"80ddc2bf"},
-							"DMU":{"fullname":"Downtown Mixed-Use","colour":"80b1c0e0"},
-							"I":{"fullname":"Institutional","colour":"80ffb272"},
-							"M1":{"fullname":"Light Industrial","colour":"80cccccc"},
-							"M2":{"fullname":"Heavy Industrial","colour":"80686868"},
-							"M3":{"fullname":"Business Park Industial","colour":"80b087c8"},
-							"MH":{"fullname":"Manufactured Housing","colour":"80e6e6e6"},
-							"MUC":{"fullname":"Mixed Use Corridor","colour":"8001aaff"},
-							"OS":{"fullname":"Open Space","colour":"8001e64c"},
-							"P":{"fullname":"Parking","colour":"80ffd2be"},
-							"R1L":{"fullname":"Single Detached Residential (Large)","colour":"8072fbff"},
-							"R1S":{"fullname":"Single Detached Residential (Small)","colour":"808afbd5"},
-							"R2":{"fullname":"Low Density Residential","colour":"805bc4ed"},
-							"R2S":{"fullname":"Low Density Residential (Small)","colour":"80d4ecfa"},
-							"R3":{"fullname":"Medium Density Residential","colour":"8000a8a9"},
-							"R4":{"fullname":"Apartment Residential","colour":"80006fa8"}
-						}
+	"A":{"fullname":"Airport","colour":"80ffffff"},
+	"C1":{"fullname":"Business Office Commercial","colour":"80802bff"},
+	"C2":{"fullname":"Highway Commercial","colour":"800064c3"},
+	"C3":{"fullname":"Shopping Centre Commercial","colour":"800055ff"},
+	"CDA":{"fullname":"Comprehensive Development Area","colour":"80ddc2bf"},
+	"DMU":{"fullname":"Downtown Mixed-Use","colour":"80b1c0e0"},
+	"I":{"fullname":"Institutional","colour":"80ffb272"},
+	"M1":{"fullname":"Light Industrial","colour":"80cccccc"},
+	"M2":{"fullname":"Heavy Industrial","colour":"80686868"},
+	"M3":{"fullname":"Business Park Industial","colour":"80b087c8"},
+	"MH":{"fullname":"Manufactured Housing","colour":"80e6e6e6"},
+	"MUC":{"fullname":"Mixed Use Corridor","colour":"8001aaff"},
+	"OS":{"fullname":"Open Space","colour":"8001e64c"},
+	"P":{"fullname":"Parking","colour":"80ffd2be"},
+	"R1L":{"fullname":"Single Detached Residential (Large)","colour":"8072fbff"},
+	"R1S":{"fullname":"Single Detached Residential (Small)","colour":"808afbd5"},
+	"R2":{"fullname":"Low Density Residential","colour":"805bc4ed"},
+	"R2S":{"fullname":"Low Density Residential (Small)","colour":"80d4ecfa"},
+	"R3":{"fullname":"Medium Density Residential","colour":"8000a8a9"},
+	"R4":{"fullname":"Apartment Residential","colour":"80006fa8"}
+}
 
 var db = new jSQL();
 db.create('zoning',zoning).use('zoning');
@@ -37,18 +37,20 @@ $(document).ready(function() {
 	$("#searchbutton").on("click", function(event) {
 		lookupAddress();
 	});
- $('#street_nm').keypress(function(event) {
-   if (event.keyCode == 13) {
-     lookupAddress();
-   }
- });
- $('#street_no').keypress(function(event) {
-   if (event.keyCode == 13) {
-     lookupAddress();
-   }
- });
- $('#street_no').focus();
 
+	$('#street_nm').keypress(function(event) {
+		if (event.keyCode == 13) {
+			lookupAddress();
+		}
+	});
+
+	$('#street_no').keypress(function(event) {
+		if (event.keyCode == 13) {
+			lookupAddress();
+		}
+	});
+
+	$('#street_no').focus();
 });
 
 function lookupAddress() {
@@ -95,28 +97,26 @@ function lookupAddress() {
 </script>
 </head>
 <body>
-<h1>City of Charlottetown Zoning Lookup by Address</h1>
-<p>Search for City of Charlottetown, Prince Edward Island civic addresses by any combination of street number and/or street name to
-		find the zoning under the <a href="http://www.city.charlottetown.pe.ca/pdfs/bylaws/ZoningDevelopment_Bylaw.pdf">Zoning and Development Bylaw</a>.</p>
-<form>
-	<table>
-		<tr><th>Street #</th><th>Street Name (or part)</th></tr>
-		<tr>
-			<td><input type="text" name="street_no" id="street_no" size="8"></td>
-			<td><input type="text" name="street_nm" id="street_nm" size="25"></td>
-			<td><input type="button" id="searchbutton" value="Search"></td>
-		</tr>
+	<h1>City of Charlottetown Zoning Lookup by Address</h1>
+	<p>Search for City of Charlottetown, Prince Edward Island civic addresses by any combination of street number and/or street name to find the zoning under the <a href="http://www.city.charlottetown.pe.ca/pdfs/bylaws/ZoningDevelopment_Bylaw.pdf">Zoning and Development Bylaw</a>.</p>
+	<form>
+		<table>
+			<tr><th>Street #</th><th>Street Name (or part)</th></tr>
+			<tr>
+				<td><input type="text" name="street_no" id="street_no" size="8"></td>
+				<td><input type="text" name="street_nm" id="street_nm" size="25"></td>
+				<td><input type="button" id="searchbutton" value="Search"></td>
+			</tr>
+		</table>
+	</form>
+	<table cellspacing="0" cellpadding="4" border="1" id='thetable'>
+	<tr>
+		<th>PID</th>
+		<th>Street #</th>
+		<th>Street Name</th>
+		<th>Zoning</th>
+		<th>Map Colour</th>
+		<th>Google Map Link</th>
+	</tr>
 	</table>
-</form>
-
-<table cellspacing="0" cellpadding="4" border="1" id='thetable'>
-<tr>
-	<th>PID</th>
-	<th>Street #</th>
-	<th>Street Name</th>
-	<th>Zoning</th>
-	<th>Map Colour</th>
-	<th>Google Map Link</th>
-</tr>
-</table>
 </body>
