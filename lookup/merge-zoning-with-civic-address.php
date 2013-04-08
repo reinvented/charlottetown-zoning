@@ -29,10 +29,10 @@
   * @license http://www.fsf.org/licensing/licenses/gpl.txt GNU Public License
   */
   
-downloadCivicAddressData();
-makeCivicAddressDatabase();
-makeZoningDatabase();
-makeLookupDatabase();
+//downloadCivicAddressData();
+//makeCivicAddressDatabase();
+//makeZoningDatabase();
+//makeLookupDatabase();
 dumpJSON();
 
 /**
@@ -118,7 +118,11 @@ function makeLookupDatabase() {
 		if ($row['pid'] > 0) {
 			$results_address = $db->query("SELECT * from civicaddress where pid='" . $row['pid']. "'");
 			$row_address = $results_address->fetchArray();
-			$db->exec("INSERT into lookup values (
+			if (count($row_address) == 0) {
+				print "No match for " . $row['pid'] . "\n";
+			}
+			else {
+				$db->exec("INSERT into lookup values (
 								'" . $row['pid'] . "',
 								'" . $row['area'] . "',
 								'" . $row['perimeter'] . "',
@@ -132,6 +136,7 @@ function makeLookupDatabase() {
 								'" . $row_address ['longitude'] . "',
 								'" . $row_address ['unique_id'] . "',
 								'" . $row_address ['census'] . "')");
+			}
 		}
 	}
 }
@@ -141,7 +146,7 @@ function makeLookupDatabase() {
   */	
 function dumpJSON() {
 	$db = new SQLite3('zoning.db');
-	$results = $db->query('SELECT * from lookup order by comm_nm,street_nm,street_no');
+	$results = $db->query('SELECT * from lookup where street_no <> "" order by comm_nm,street_nm,street_no ');
 	while ($row = $results->fetchArray(SQLITE_ASSOC)) {
 		$rows[] = $row;
 	}
