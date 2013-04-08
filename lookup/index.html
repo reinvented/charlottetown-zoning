@@ -1,0 +1,122 @@
+<head>
+<title>City of Charlottetown Zoning Lookup by Civic Address</title>
+<meta charset="UTF-8"> 
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jsql-min.js"></script><!-- https://github.com/PaulGuo/jSQL -->
+<script src="zoning_lookup.js"></script>
+<link type="text/css" rel="stylesheet" media="all" href="index.css" />
+<script>
+
+var zones = {
+							"A":{"fullname":"Airport","colour":"80ffffff"},
+							"C1":{"fullname":"Business Office Commercial","colour":"80802bff"},
+							"C2":{"fullname":"Highway Commercial","colour":"800064c3"},
+							"C3":{"fullname":"Shopping Centre Commercial","colour":"800055ff"},
+							"CDA":{"fullname":"Comprehensive Development Area","colour":"80ddc2bf"},
+							"DMU":{"fullname":"Downtown Mixed-Use","colour":"80b1c0e0"},
+							"I":{"fullname":"Institutional","colour":"80ffb272"},
+							"M1":{"fullname":"Light Industrial","colour":"80cccccc"},
+							"M2":{"fullname":"Heavy Industrial","colour":"80686868"},
+							"M3":{"fullname":"Business Park Industial","colour":"80b087c8"},
+							"MH":{"fullname":"Manufactured Housing","colour":"80e6e6e6"},
+							"MUC":{"fullname":"Mixed Use Corridor","colour":"8001aaff"},
+							"OS":{"fullname":"Open Space","colour":"8001e64c"},
+							"P":{"fullname":"Parking","colour":"80ffd2be"},
+							"R1L":{"fullname":"Single Detached Residential (Large)","colour":"8072fbff"},
+							"R1S":{"fullname":"Single Detached Residential (Small)","colour":"808afbd5"},
+							"R2":{"fullname":"Low Density Residential","colour":"805bc4ed"},
+							"R2S":{"fullname":"Low Density Residential (Small)","colour":"80d4ecfa"},
+							"R3":{"fullname":"Medium Density Residential","colour":"8000a8a9"},
+							"R4":{"fullname":"Apartment Residential","colour":"80006fa8"}
+						}
+
+var db = new jSQL();
+db.create('zoning',zoning).use('zoning');
+
+$(document).ready(function() {
+	$("#searchbutton").on("click", function(event) {
+		lookupAddress();
+	});
+ $('#street_nm').keypress(function(event) {
+   if (event.keyCode == 13) {
+     lookupAddress();
+   }
+ });
+ $('#street_no').keypress(function(event) {
+   if (event.keyCode == 13) {
+     lookupAddress();
+   }
+ });
+ $('#street_no').focus();
+
+});
+
+function lookupAddress() {
+
+ 	if (($('#street_no').val() != '') && ($('#street_nm').val() == '')) {
+		db.select('*').where(function(o) {
+			return (o.street_no == $('#street_no').val())
+		});
+	}
+ 	else if (($('#street_no').val() != '') && ($('#street_nm').val() != '')) {
+		db.select('*').where(function(o) {
+			return (o.street_no == $('#street_no').val() && o.street_nm.substring(0, $('#street_nm').val().length) === $('#street_nm').val().toUpperCase())
+		});
+	}
+ 	else if (($('#street_no').val() == '') && ($('#street_nm').val() != '')) {
+		db.select('*').where(function(o) {
+			return (o.street_nm.substring(0, $('#street_nm').val().length) === $('#street_nm').val().toUpperCase())
+		});
+	}
+	 
+	var data = db.listAll();
+
+	$('#thetable tr').not(':first').remove();
+	var html = '';
+	if (data.length == 0) {
+		html = "<tr><td colspan='6'><p>No matching civic address found. You do not have to enter the complete street name: for example, you can enter <b>QUEEN</b> or <b>QU</b> instead of <b>QUEEN STREET</b>. Or you can leave out the street entirely and just enter the street number.</td></tr>";	
+	}
+	else {
+		for(var i = 0; i < data.length; i++) {
+				htmlcolour = '#' + zones[data[i].zoning].colour.substring(6,2) + zones[data[i].zoning].colour.substring(4,2) + zones[data[i].zoning].colour.substring(2,2);
+				html += '<tr><td>' + data[i].pid + 
+											'</td><td>' + data[i].street_no + '</td>' +
+											'</td><td>' + data[i].street_nm + '</td>' +
+											'</td><td>' + zones[data[i].zoning].fullname + ' (' + data[i].zoning + ')</td>' + 
+											'<td style="background:' + htmlcolour + '">&nbsp;&nbsp;&nbsp;</td>' +
+											'<td><a target="_blank" href="https://maps.google.com/maps?q=' + data[i].latitude + ',' + data[i].longitude + '&z=16">' + data[i].latitude + ',' + data[i].longitude + '</a></td>' +
+											'</tr>';
+		}
+	}
+	$('#thetable tr').first().after(html);
+
+}
+
+</script>
+</head>
+<body>
+<h1>City of Charlottetown Zoning Lookup by Address</h1>
+<p>Search for City of Charlottetown, Prince Edward Island civic addresses by any combination of street number and/or street name to
+		find the zoning under the <a href="http://www.city.charlottetown.pe.ca/pdfs/bylaws/ZoningDevelopment_Bylaw.pdf">Zoning and Development Bylaw</a>.</p>
+<form>
+	<table>
+		<tr><th>Street #</th><th>Street Name (or part)</th></tr>
+		<tr>
+			<td><input type="text" name="street_no" id="street_no" size="8"></td>
+			<td><input type="text" name="street_nm" id="street_nm" size="25"></td>
+			<td><input type="button" id="searchbutton" value="Search"></td>
+		</tr>
+	</table>
+</form>
+
+<table cellspacing="0" cellpadding="4" border="1" id='thetable'>
+<tr>
+	<th>PID</th>
+	<th>Street #</th>
+	<th>Street Name</th>
+	<th>Zoning</th>
+	<th>Map Colour</th>
+	<th>Google Map Link</th>
+</tr>
+</table>
+</body>

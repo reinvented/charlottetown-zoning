@@ -1,0 +1,16 @@
+body {
+	font-family: verdana, sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	font-size: 140%;
+}
+
+th {
+	font-size: 80%;
+}
