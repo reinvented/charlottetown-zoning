@@ -80,18 +80,17 @@ function lookupAddress() {
 	}
 	else {
 		for(var i = 0; i < data.length; i++) {
-				htmlcolour = '#' + zones[data[i].zoning].colour.substring(6,2) + zones[data[i].zoning].colour.substring(4,2) + zones[data[i].zoning].colour.substring(2,2);
-				html += '<tr><td>' + data[i].pid + 
-											'</td><td>' + data[i].street_no + '</td>' +
-											'</td><td>' + data[i].street_nm + '</td>' +
-											'</td><td>' + zones[data[i].zoning].fullname + ' (' + data[i].zoning + ')</td>' + 
-											'<td style="background:' + htmlcolour + '">&nbsp;&nbsp;&nbsp;</td>' +
-											'<td><a target="_blank" href="https://maps.google.com/maps?q=' + data[i].latitude + ',' + data[i].longitude + '&z=16">' + data[i].latitude + ',' + data[i].longitude + '</a></td>' +
-											'</tr>';
+			htmlcolour = '#' + zones[data[i].zoning].colour.substring(6,2) + zones[data[i].zoning].colour.substring(4,2) + zones[data[i].zoning].colour.substring(2,2);
+			html += '<tr><td>' + data[i].pid + 
+			'</td><td>' + data[i].street_no + '</td>' +
+			'</td><td>' + data[i].street_nm + '</td>' +
+			'</td><td>' + zones[data[i].zoning].fullname + ' (' + data[i].zoning + ')</td>' + 
+			'<td style="background:' + htmlcolour + '">&nbsp;&nbsp;&nbsp;</td>' +
+			'<td><a target="_blank" href="https://maps.google.com/maps?q=' + data[i].latitude + ',' + data[i].longitude + '&z=16">' + data[i].latitude + ',' + data[i].longitude + '</a></td>' +
+			'</tr>';
 		}
 	}
 	$('#thetable tr').first().after(html);
-
 }
 
 </script>
