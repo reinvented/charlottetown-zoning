@@ -14,7 +14,9 @@ OS,Open Space,8001e64c
 P,Parking,80ffd2be
 R1L,Single Detached Residential (Large),8072fbff
 R1S,Single Detached Residential (Small),808afbd5
+R1N,Narrow Single Detached Residential,808afbd5
 R2,Low Density Residential,805bc4ed
 R2S,Low Density Residential (Small),80d4ecfa
 R3,Medium Density Residential,8000a8a9
 R4,Apartment Residential,80006fa8
+U,Unzoned,80000000

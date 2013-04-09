@@ -1,0 +1,924 @@
+<Style id="zoning_A_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffffff</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_A">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffffff</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_A_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_A</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_A_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_C1_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80802bff</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_C1">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80802bff</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_C1_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_C1</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_C1_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_C2_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>800064c3</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_C2">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>800064c3</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_C2_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_C2</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_C2_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_C3_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>800055ff</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_C3">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>800055ff</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_C3_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_C3</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_C3_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_CDA_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ddc2bf</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_CDA">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ddc2bf</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_CDA_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_CDA</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_CDA_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_DMU_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80b1c0e0</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_DMU">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80b1c0e0</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_DMU_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_DMU</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_DMU_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_I_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffb272</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_I">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffb272</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_I_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_I</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_I_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_M1_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80cccccc</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_M1">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80cccccc</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_M1_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_M1</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_M1_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_M2_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80686868</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_M2">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80686868</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_M2_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_M2</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_M2_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_M3_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80b087c8</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_M3">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80b087c8</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_M3_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_M3</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_M3_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_MH_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80e6e6e6</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_MH">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80e6e6e6</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_MH_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_MH</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_MH_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_MUC_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8001aaff</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_MUC">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8001aaff</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_MUC_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_MUC</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_MUC_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_OS_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8001e64c</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_OS">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8001e64c</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_OS_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_OS</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_OS_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_P_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffd2be</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_P">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80ffd2be</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_P_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_P</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_P_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R1L_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8072fbff</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R1L">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8072fbff</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R1L_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R1L</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R1L_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R1S_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>808afbd5</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R1S">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>808afbd5</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R1S_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R1S</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R1S_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R1N_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>808afbd5</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R1N">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>808afbd5</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R1N_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R1N</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R1N_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R2_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>805bc4ed</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R2">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>805bc4ed</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R2_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R2</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R2_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R2S_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80d4ecfa</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R2S">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80d4ecfa</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R2S_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R2S</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R2S_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R3_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8000a8a9</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R3">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>8000a8a9</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R3_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R3</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R3_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_R4_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80006fa8</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_R4">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80006fa8</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_R4_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_R4</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_R4_hl</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="zoning_U_hl">
+	<IconStyle>
+		<scale>1.3</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80000000</color>
+	</PolyStyle>
+</Style>
+<Style id="zoning_U">
+	<IconStyle>
+		<scale>1.1</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+		</Icon>
+		<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LineStyle>
+		<color>ff000000</color>
+		<width>0.5</width>
+	</LineStyle>
+	<PolyStyle>
+		<color>80000000</color>
+	</PolyStyle>
+</Style>
+<StyleMap id="zoning_U_colour">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#zoning_U</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#zoning_U_hl</styleUrl>
+	</Pair>
+</StyleMap>
