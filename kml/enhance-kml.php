@@ -58,12 +58,20 @@ foreach($xml->Document->Folder->Placemark as $pm) {
 	$area = number_format($area,0);
 	print $counter . " - " . $address . "\n";
 	$counter++;
+	$output[$zoning] .= "<description><![CDATA[";
 	if ($address) {
-		$output[$zoning] .= "<description><![CDATA[<h3>$address</h3><h4>Zoned \"" . $zonename[$abbrev] . "\" ($abbrev)</h4><ul><li>Perimeter: $perimeter m</li><li>Area: $area m² ($acres acres)</li>]]></description>\n";
+		$output[$zoning] .= "<h3>$address</h3><h4>Zoned \"" . $zonename[$abbrev] . "\" ($abbrev)</h4><ul><li>Perimeter: $perimeter m</li><li>Area: $area m² ($acres acres)</li></ul>\n";
 	}
 	else {
-		$output[$zoning] .= "<description><![CDATA[<h4>Zoned \"" . $zonename[$abbrev] . "\" ($abbrev)</h4><ul><li>Perimeter: $perimeter m</li><li>Area: $area m² ($acres acres)</li>]]></description>\n";
+		$output[$zoning] .= "<h4>Zoned \"" . $zonename[$abbrev] . "\" ($abbrev)</h4><ul><li>Perimeter: $perimeter m</li><li>Area: $area m² ($acres acres)</li></ul>\n";
 	}
+	$output[$zoning] .= "<h4>Geolinc Plus (Requires Subscription)</h4>";
+	$output[$zoning] .= "<ul>";
+	$output[$zoning] .= "<li><a href=\"http://eservices.gov.pe.ca/pei-icis/secure/assessment/view.do?parcelNumber=" . intval($pm->ExtendedData->SchemaData->SimpleData[0]). "&leaseCode=0\">Assessment</a></li>";
+	$output[$zoning] .= "<li><a href=\"http://eservices.gov.pe.ca/pei-icis/secure/assessment/viewRegistry.do?parcelNumber=" . intval($pm->ExtendedData->SchemaData->SimpleData[0]). "&leaseCode=0&registry=true\">Registry</a></li>";
+	$output[$zoning] .= "<li><a href=\"http://eservices.gov.pe.ca/pei-icis/secure/assessment/viewTaxValues.do?parcelNumber=" . intval($pm->ExtendedData->SchemaData->SimpleData[0]). "&leaseCode=0\">Tax Value</a></li>";
+	$output[$zoning] .= "</ul>";
+	$output[$zoning] .= "]]></description>";
 	$output[$zoning] .= $pm->Polygon->asXML();
 	$output[$zoning] .= "</Placemark>\n";
 }
